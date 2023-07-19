@@ -1,0 +1,126 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    --very-dark-blue:hsl(234,12%,34%);
+    --grayish-blue: hsl(229,6%,66%);
+    --very-light-gray:hsl(0, 26%, 96%);
+}
+body{
+    background-color: var(--very-light-gray);
+}
+.main{
+    width: 500px;
+    height: auto;
+    padding:10px ;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+.title{
+    text-align: center;
+    font-size: 2.4em;
+}
+#title-2{
+    font-weight: 600;
+}
+#title-1{
+    font-weight: 200;
+}
+.title, .feature-heading{
+    color: var(--very-dark-blue);
+}
+.about{
+    margin-top: 15px;
+    text-align: center;
+}
+.about, .feature-about{
+    color: var(--grayish-blue);
+}
+.feature-container{
+    width: 80%;
+    margin-top: 60px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+#feature-2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+.card{
+    background-color: #faf7f7;
+    box-shadow: -1px 12px 20px 2px rgba(131,134,134,0.75);
+    width: 350px;
+    height: 300px;
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 7px;
+}
+.card > .feature-logo{
+    float: right;
+    margin-top: 60px;
+    margin-right: 35px;
+}
+.feature-heading{
+    font-weight: 600;
+    font-size: 1.4em;
+    margin-top: 30px;
+}
+.feature-about{
+    margin-top: 15px;
+}
+
+#Supervisor{
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+#Team-builder{
+    border-top: 5px solid hsl(0, 78%, 62%);
+
+}
+#Karma{
+    border-top:5px solid hsl(34, 97%, 64%);
+}
+.Calculator{
+    border-top:5px solid hsl(212, 86%, 64%);
+}
+/* Media Queries */
+
+@media screen and (max-width:500px) {
+    .card{
+        width: 95%;
+        margin-right: auto;
+        margin-left: auto;
+        height: auto;
+    }
+    .feature-container{
+        width: 100%;
+    }
+    .main{
+        width: 100%;
+        padding: 10px 0px 10px 0px;
+        text-align: left;
+    }
+    .title{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .title{
+        font-size: 34px;
+    }
+    .main{
+        width: 100%;
+        padding: 10px 0px 10px 0px;
+        text-align: left;
+    }
+}
